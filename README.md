@@ -233,7 +233,7 @@ game.reset_game()
 ## Library Structure
 The purposes of the main modules are listed as below:
 
-*   [/LimitTexasHoldem](AgentPro\LimitTexasHoldem): The environment of Limit Texas Holdem.
-*   [/Blackjack](AgentPro\Blackjack): The environment of Blackjack.
-*   [/example](AgentPro\example): Store example in paper.
-*   [/train_example](AgentPro\train_example): Example of training model.
+*   [/LimitTexasHoldem](LimitTexasHoldem): The environment of Limit Texas Holdem.
+*   [/Blackjack](Blackjack): The environment of Blackjack.
+*   [/example](example): Store example in paper.
+*   [/train_example](train_example): Example of training model.
