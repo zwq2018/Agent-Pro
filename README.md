@@ -1,6 +1,6 @@
 # AgentPro
 
-AgentPro, built upon RLCard, seamlessly connects to large models like GPT, LLama, QWEN, and more. These interfaces facilitate the integration of RLCard's functionalities with robust language models, enabling advanced applications in natural language processing and reinforcement learning. Through these interfaces, users can harness the power of RLCard alongside cutting-edge language models to create environments for Limit Texas Poker and Blackjack, augmented by LLama interventions.
+AgentPro, built upon RLCard, seamlessly connects to large models like GPT, LLama, QWEN, and more. These interfaces facilitate the integration of RLCard's functionalities with robust language models, enabling advanced applications in natural language processing and reinforcement learning.
 
 
 ## Installation
