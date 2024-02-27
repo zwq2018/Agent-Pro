@@ -1,0 +1,38 @@
+{
+    "ReAct":[
+        {
+            "role": "system",
+            "content": "You are a player in blackjack. Please beat the dealer and win the game.\nGame Rule:\n1. Please try to get your card total to as close to 21 as possible, without going over, and still having a higher total than the dealer.\n2. If anyone's point total exceeds 21, he or she loses the game. \n3. You can only choose one of the following two actions: {\"Stand\", \"Hit\"}. If you choose to Stand, you will stop taking cards and wait for the dealer to finish. If you choose to Hit, you can continue to take a card, but there is also the risk of losing the game over 21 points. \n4. After all players have completed their hands, the dealer reveals their hidden card. Dealers must hit until their cards total 17 or higher.\n"
+        },
+        {
+            "role": "user",
+            "content": "The dealer current card is {Spade 8}. The dealer has another hidden card. You don't know what it is. Your current cards are {Heart 10,Club 8}. Please first think and reason about the current hand and then generate your action in the following format: ###My thought is {Your Thought}. My action is {your action}."
+        },
+        {
+            "role": "assistant",
+            "content": "###My thought is The sum of my cards is currently 18. I am in a fairly safe position, not too likely to exceed 21 by hitting. However, since the dealer's visible card is an 8, there is a good chance that the sum of the dealer's cards will also be around 18. In order to increase my chances of winning, I need to aim for a higher total. My action is Hit."
+        },
+        {
+            "final cards": "dealer ['S8','H4', 'DQ'], player ['HT', 'C8', 'DJ'] ",
+            "final results": "lose"
+        }
+    ],
+    "AgentPro":[
+        {
+            "role": "system",
+            "content": "You are a player in blackjack. Please beat the dealer and win the game.\nGame Rule:\n1. Please try to get your card total to as close to 21 as possible, without going over, and still having a higher total than the dealer.\n2. If anyone's point total exceeds 21, he or she loses the game. \n3. You can only choose one of the following two actions: {\"Stand\", \"Hit\"}. If you choose to Stand, you will stop taking cards and wait for the dealer to finish. If you choose to Hit, you can continue to take a card, but there is also the risk of losing the game over 21 points. \n4. After all players have completed their hands, the dealer reveals their hidden card. Dealers must hit until their cards total 17 or higher.\n"
+        },
+        {
+            "role": "user",
+            "content": "The dealer current card is {Spade 8}. The dealer has another hidden card. You don't know what it is. Your current cards are {Heart 10,Club 8}. Please first analyze your own cards and your strategies in Self-belief and then analyze the dealer cards in External-belief. When you have achieved a relatively stable total hand value, choosing not to take risks is a good decision. Then analyze the dealer cards in External-belief, when faced with a relatively low dealer visible hand, excessive risk taking can lead to unfavorable outcomes. Lastly, please select your action from {\"Stand\", \"Hit\"}. ### Output Format: Self-Belief is {belief about yourself}. External-Belief is {belief about the dealer}. My action is {your action}. Please output in the given format."
+        },
+        {
+            "role": "assistant",
+            "content": "Self-Belief is I currently have a total of 18 points, which is a relatively strong hand. I am confident that I can beat the dealer with this hand. However, I should be cautious not to exceed 21 points by hitting and risking busting.\nExternal-Belief is The dealer's visible card is an 8, which is a moderate hand. It is likely that the dealer may still need to hit to reach a total of 17 or higher. Therefore, I should be careful not to risk busting by hitting and exceeding 21 points.\nMy action is Stand."
+        },
+        {
+            "final cards": "dealer ['H4', 'S8', 'DJ'], player ['HT', 'C8'] ",
+            "final results": "win"
+        }
+    ]
+}
