@@ -1,6 +1,9 @@
 # AgentPro
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2402.17574])
 
+<video src="https://github.com/zwq2018/Agent-Pro/agent-pro_video.mp4" width="640" height="480" controls></video>
+
+
 AgentPro, built upon RLCard, seamlessly connects to large models like GPT, LLama, QWEN, and more. These interfaces facilitate the integration of RLCard's functionalities with robust language models, enabling advanced applications in natural language processing and reinforcement learning.
 
 See our paper: [Agent-Pro: Learning to Evolve via Policy-Level Reflection and Optimization](https://arxiv.org/abs/2402.17574), Wenqi Zhang, Ke Tang, Hai Wu, Mengna Wang, Yongliang Shen, Guiyang Hou, Zeqi Tan, Peng Li, Yueting Zhuang, Weiming Lu
