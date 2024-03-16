@@ -1,5 +1,8 @@
 # AgentPro
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2402.17574])
+[https://www.qbitai.com/2024/03/127294.html](https://www.qbitai.com/2024/03/127294.html )
+
+
 
 <video src="https://github.com/zwq2018/Agent-Pro/assets/44236100/95fcde18-ffbb-48da-8917-81e1af74b0c3" width="640" height="480" autoplay loop></video>
 
