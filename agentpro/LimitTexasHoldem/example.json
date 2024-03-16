@@ -1,0 +1,27 @@
+[
+    {
+        "game": "In this Limit Texas poker game, there are 4 players from 0 to 3. Player 0's hand is ['S4', 'D7']. Player 1's hand is ['D8', 'H5']. Player 2's hand is ['S3', 'CK']. Player 3's hand is ['CQ', 'SQ']. The community card is ['H3', 'D5', 'HK', 'DJ', 'DA']. The all game process is Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 folds. Player 1 checks. Flop. Player 2 raises. Player 3 raises. Player 1 raises. Player 2 folds. Player 3 raises. Player 1 calls. Player 3 checks. Player 1 checks. Turn. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 checks. Player 1 checks. River. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 raises. Player 1 calls. Player 3 checks. Player 1 checks. Player 0 loses by 1.0 chip(s). Player 1 loses by 22.0 chip(s). Player 2 loses by 3.0 chip(s). Player 3 wins by 26.0 chip(s). ",
+        "hand": ["CQ", "SQ"],
+        "community_cards": ["H3", "D5", "HK", "DJ", "DA"]
+    },
+    {
+        "game": "In this Limit Texas poker game, there are 4 players from 0 to 3. Player 0's hand is ['S7', 'SA']. Player 1's hand is ['C3', 'D5']. Player 2's hand is ['H3', 'CA']. Player 3's hand is ['HJ', 'CQ']. The community card is ['C2', 'H9', 'S3', 'D9', 'C8']. The all game process is Preflop. Player 2 calls. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Player 3 raises. Player 0 raises. Player 1 calls. Player 2 folds. Player 3 raises. Player 0 calls. Player 1 calls. Player 3 raises. Player 0 calls. Player 1 calls. Player 3 checks. Turn. Player 0 raises. Player 1 calls. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 raises. Player 0 calls. Player 1 calls. Player 3 checks. River. Player 0 checks. Player 1 checks. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 calls. Player 0 checks. Player 0 loses by 22.0 chip(s). Player 1 wins by 46.0 chip(s). Player 2 loses by 2.0 chip(s). Player 3 loses by 22.0 chip(s).  ",
+        "hand": ["HJ", "CQ"],
+        "community_cards": ["C2", "H9", "S3", "D9", "C8"]
+    },
+    {
+        "game": "In this Limit Texas poker game, there are 4 players from 0 to 3. Player 0's hand is ['HT', 'H5']. Player 1's hand is ['HQ', 'ST']. Player 2's hand is ['C2', 'S6']. Player 3's hand is ['HA', 'C9']. The community card is ['C7', 'S8', 'DQ', 'S5', 'SQ']. The all game process is Preflop. Player 2 calls. Player 3 calls. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 calls. Flop. Player 1 checks. Player 2 checks. Player 3 checks. Player 0 checks. Turn. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. River. Player 3 checks. Player 0 checks. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 calls. Player 3 calls. Player 0 checks. Player 0 loses by 8.0 chip(s). Player 1 wins by 18.0 chip(s). Player 2 loses by 2.0 chip(s). Player 3 loses by 8.0 chip(s). ",
+        "hand": ["HA", "C9"],
+        "community_cards": ["C7", "S8", "DQ", "S5", "SQ"]
+    },
+    {
+        "game": "In this Limit Texas poker game, there are 4 players from 0 to 3. Player 0's hand is ['S7', 'HT']. Player 1's hand is ['HJ', 'D4']. Player 2's hand is ['CT', 'SK']. Player 3's hand is ['H2', 'CJ']. The community card is ['H9', 'C6', 'S4', 'ST']. The all game process is Preflop. Player 3 calls. Player 0 folds. Player 1 raises. Player 2 folds. Player 3 calls. Player 1 checks. Player 3 checks. Flop. Player 1 checks. Player 3 checks. Player 1 checks. Player 3 checks. Turn. Player 1 raises. Player 3 calls. Player 1 folds. Player 0 neither wins nor loses. Player 1 loses by 4.0 chip(s). Player 2 loses by 1.0 chip(s). Player 3 wins by 5.0 chip(s). ",
+        "hand": ["H2", "CJ"],
+        "community_cards": ["H9", "C6", "S4", "ST"]
+    },
+    {
+        "game": "In this Limit Texas poker game, there are 4 players from 0 to 3. Player 0's hand is ['CQ', 'S5']. Player 1's hand is ['DQ', 'C6']. Player 2's hand is ['S4', 'HA']. Player 3's hand is ['H2', 'C5']. The community card is ['C7', 'HQ', 'HJ', 'SJ', 'H7']. The all game process is Preflop. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 folds. Player 0 raises. Player 1 raises. Player 0 calls. Player 1 checks. Player 0 checks. Flop. Player 1 checks. Player 0 raises. Player 1 raises. Player 0 raises. Player 1 calls. Player 0 raises. Player 1 calls. Player 0 checks. Player 1 checks. Turn. Player 0 raises. Player 1 calls. Player 0 checks. Player 1 checks. River. Player 0 raises. Player 1 calls. Player 0 checks. Player 1 raises. Player 0 raises. Player 1 calls. Player 0 checks. Player 1 raises. Player 0 calls. Player 1 checks. Player 0 checks. Player 0 wins by 0.5 chip(s). Player 1 wins by 1.0 chip(s). Player 2 loses by 0.5 chip(s). Player 3 loses by 1.0 chip(s). ",
+        "hand": ["H2", "C5"],
+        "community_cards": ["C7", "HQ", "HJ", "SJ", "H7"]
+    }
+]
