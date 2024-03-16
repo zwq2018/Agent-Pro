@@ -13,74 +13,29 @@ Ensure that you have Python 3.6+ and pip installed. Additionally, confirm that y
 
 ### 1. Install PyTorch
 
-Follow the official PyTorch installation guide to install PyTorch.
-
+You can follow the official PyTorch installation guide to install PyTorch. Or you can choose your preferred version and complete the installation yourself.
 ```
-pip install torch
+pip3 install torch
 ```
-### 2. Install OpenAI GPT
-Install the OpenAI GPT library using the following command:
-
-```
-pip install openai
-```
-### 3. Install dashscope
-Install the dashscope library using the following command:
-
-```
-pip install dashscope
-```
-### 4. Install replicate
-Install the dashscope library using the following command:
-
-```
-pip install replicate
-```
-
-### 5. Install RLCard
+### 2. Install RLCard
 You can visit the official RLCard website at https://github.com/datamllab/rlcard to access RLCard-related files and find more information about the library.
 
 Here is the same installation method as the official website:
 
-
 ```
 pip3 install rlcard
 ```
-The default installation will only include the card environments. To use PyTorch implementation of the training algorithms, run
+
+### 3. Install AgentPro
+
+First, you should clone the code from github as follow:
 ```
-pip3 install rlcard[torch]
-```
-If the above command is too slow, you can use the mirror provided by Tsinghua University:
-```
-pip3 install rlcard -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-Alternatively, you can clone the latest version with (if Github is slow, you can use the mirror in [Gitee](https://gitee.com/daochenzha/rlcard)):
-```
-git clone https://github.com/datamllab/rlcard.git
-```
-or only clone one branch to make it faster:
-```
-git clone -b master --single-branch --depth=1 https://github.com/datamllab/rlcard.git
+git clone https://github.com/zwq2018/Agent-Pro.git
 ```
 Then install with
 ```
-cd rlcard
-pip3 install -e .
-pip3 install -e .[torch]
-```
-
-RLCard also provide [**conda** installation method](https://anaconda.org/toubun/rlcard):
-
-```
-conda install -c toubun rlcard
-```
-
-Conda installation only provides the card environments, you need to manually install Pytorch on your demands.
-
-### 6. Install AgentPro
-
-```
-git clone 
+cd Agent-Pro
+pip3 install .
 ```
 
 ## Available Environments
@@ -234,11 +189,10 @@ game.reset_game()
 
 
 
-
 ## Library Structure
 The purposes of the main modules are listed as below:
 
 *   [/LimitTexasHoldem](LimitTexasHoldem): The environment of Limit Texas Holdem.
 *   [/Blackjack](Blackjack): The environment of Blackjack.
-*   [/example](example): Store example in paper.
-*   [/train_example](train_example): Example of training model.
+*   [/data_examples](data_example): Store example in paper.
+*   [/train_examples](train_example): Example of training model.
