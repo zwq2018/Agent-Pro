@@ -1,6 +1,6 @@
 # AgentPro
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2402.17574])
-[https://www.qbitai.com/2024/03/127294.html](https://www.qbitai.com/2024/03/127294.html )
+[![QbitAI Article](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html)
 
 
 
