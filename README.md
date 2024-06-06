@@ -4,7 +4,7 @@
 
 [New 0517] **Our paper is accepted by ACL 2024 Main**
 
-[New 0511] **Agent-Pro is presented in ICLR 2024 LLMAgents Workshop**
+[New 0511] **Agent-Pro is presented in ICLR 2024 LLMAgents Workshop, Vienna.(https://llmagents.github.io/)**
 
 [New 0326] **Our article has been noticed and reported by Jiangmen Ventures(将门创投).**
 
