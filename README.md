@@ -3,8 +3,10 @@
 [![QbitAI Article](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html)
 
 [New 0517] **Our paper is accepted by ACL 24 Main**
+
 [New 0326] **Our article was promoted by Jiangmen Ventures(将门创投).**
-[New 0517] **Our article was promoted by QbitAI(量子位).**
+
+[New 0227] **Our article was promoted by QbitAI(量子位).**
 <video src="https://github.com/zwq2018/Agent-Pro/assets/44236100/95fcde18-ffbb-48da-8917-81e1af74b0c3" width="640" height="480" autoplay loop></video>
 
 
