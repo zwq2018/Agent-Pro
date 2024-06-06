@@ -2,9 +2,13 @@
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2402.17574])
 [![QbitAI Article](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html)
 
-[New 0517] **Our paper is accepted by ACL 24 Main**
+[New 0517] **Our paper is accepted by ACL 2024 Main**
+
+[New 0511] **Agent-Pro is presented in ICLR 2024 LLMAgents Workshop**
 
 [New 0326] **Our article has been noticed and reported by Jiangmen Ventures(将门创投).**
+
+[New 0301] **Agent-Pro is accepted by ICLR 2024 LLMAgents Workshops as a Poster paper.**
 
 [New 0227] **Our article has been noticed and reported by QbitAI(量子位).**
 <video src="https://github.com/zwq2018/Agent-Pro/assets/44236100/95fcde18-ffbb-48da-8917-81e1af74b0c3" width="640" height="480" autoplay loop></video>
