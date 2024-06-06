@@ -1,6 +1,9 @@
 # AgentPro
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)]([https://arxiv.org/abs/2402.17574])
-[![QbitAI Article](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html)
+[![量子位](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html)
+[![将门创投](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://mp.weixin.qq.com/s/gD4pZc6pvX8f_62uiPJacg)
+
+
 
 [New 0517] **Our paper is accepted by ACL 2024 Main**
 
