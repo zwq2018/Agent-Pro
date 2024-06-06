@@ -10,7 +10,7 @@
 
 [New 0301] **Agent-Pro is accepted by ICLR 2024 LLMAgents Workshops as a Poster paper.**
 
-[New 0227] **Our article has been noticed and reported by QbitAI(量子位).**
+[New 0227] **Our article has been noticed and reported by QbitAI(量子位): [![QbitAI Article](https://img.shields.io/badge/QbitAI-Article-007bff.svg)](https://www.qbitai.com/2024/03/127294.html).**
 <video src="https://github.com/zwq2018/Agent-Pro/assets/44236100/95fcde18-ffbb-48da-8917-81e1af74b0c3" width="640" height="480" autoplay loop></video>
 
 
