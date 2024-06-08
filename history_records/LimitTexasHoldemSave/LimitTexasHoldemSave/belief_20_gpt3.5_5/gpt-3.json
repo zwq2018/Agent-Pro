@@ -1,0 +1,1444 @@
+[
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C2'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['CA', 'HA'], and the public cards is []. The number of chips all players have invested is [4, 6, 8, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> \nMy hand is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. \n\nLooking at the actions of the other players, Player 0, Player 1, and Player 2 have all raised the bet. This indicates that they likely have strong hands as well. At this point, it's difficult to accurately gauge their hands without any community cards.\n\n<ops> \nPlayer 0 has raised initially, which suggests they have a strong hand or are trying to bluff.Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings.\n\nConsidering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold.\n\n<opo> \nPlayer 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. \n\nBased on my analysis of the situation, I believe the most reasonable action is to {'action': 'raise'}. Since I have a strong starting hand, raising will help build the pot and potentially force weaker hands to fold. Additionally, it will give me a chance to win more chips if my opponents call. </ses>"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C2'], and the public cards is []. The number of chips all players have invested is [10, 10, 8, 10]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['CA', 'HA'], and the public cards is ['H7', 'CQ', 'CT']. The number of chips all players have invested is [10, 10, 10, 10]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  \nMy hand is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. \n\nLooking at the actions of the other players, Player 0, Player 1, and Player 2 have all raised the bet. This indicates that they likely have strong hands as well. At this point, it's difficult to accurately gauge their hands without any community cards.\n\n<ops> \nPlayer 0 has raised initially, which suggests they have a strong hand or are trying to bluff.Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings.\n\nConsidering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold.\n\n<opo> \nPlayer 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. \n\nBased on my analysis of the situation, I believe the most reasonable action is to {'action': 'raise'}. Since I have a strong starting hand, raising will help build the pot and potentially force weaker hands to fold. Additionally, it will give me a chance to win more chips if my opponents call. \nthe game situation of opponents who have not chosen to fold is: \nyour opponent's opinion of you is: \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['raise', 'fold', 'check']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. </ses>\n\n<ops> Player 0 has raised initially, which suggests they have a strong hand or are trying to bluff. Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings. Considering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold. </ops>\n\n<opo> Player 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. </opo>\n\nBased on my analysis of the situation, I believe the most reasonable action is to {'action': 'raise'}. Since I have a strong starting hand, raising will help build the pot and potentially force weaker hands to fold. Additionally, it will give me a chance to win more chips if my opponents call."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C2'], and the public cards is ['H7', 'CQ', 'CT']. The number of chips all players have invested is [12, 14, 10, 12]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Player 3 raises. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['CA', 'HA'], and the public cards is ['H7', 'CQ', 'CT']. The number of chips all players have invested is [12, 14, 14, 12]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Player 3 raises. Player 0 calls. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. \nthe game situation of opponents who have not chosen to fold is:  Player 0 has raised initially, which suggests they have a strong hand or are trying to bluff. Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings. Considering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold. \nyour opponent's opinion of you is:  Player 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. </ses>\n\n<ops> Player 0 has raised initially, which suggests they have a strong hand or are trying to bluff. Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings. Considering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold. </ops>\n\n<opo> Player 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. </opo>\n\nGiven the current situation, it is apparent that all players involved in the hand have strong holdings. The fact that Player 0, Player 1, and Player 2 have raised suggests that they all have premium hands. While my pocket aces are strong, the potential for stronger hands from my opponents raises the risk of losing this hand. However, folding at this point seems premature as the community cards have not been revealed yet. \n\nTaking into account the actions of my opponents and the belief that they likely have strong hands, the most reasonable action would be to <b>{\"action\": \"call\"}</b>. By calling, I can see the Flop and evaluate the strength of my hand relative to the community cards and the actions of my opponents in the next round of betting."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C2'], and the public cards is ['H7', 'CQ', 'CT', 'H3']. The number of chips all players have invested is [14, 18, 14, 14]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Player 3 raises. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 calls. Turn. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['CA', 'HA'], and the public cards is ['H7', 'CQ', 'CT', 'H3']. The number of chips all players have invested is [14, 18, 14, 14]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 raises. Player 0 calls. Player 1 calls. Player 2 calls. Flop. Player 3 raises. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 calls. Turn. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My card type is ['CA', 'HA']. Since it's preflop and I haven't seen any community cards yet, I only have information about my own hand. With a pair of aces, this is a strong starting hand and I should consider playing aggressively to maximize my chip winnings. \nthe game situation of opponents who have not chosen to fold is:  Player 0 has raised initially, which suggests they have a strong hand or are trying to bluff. Player 1 and Player 2 have also raised, indicating they might have even stronger hands and are confident in their holdings. Considering their actions, it seems like all opponents may have premium pocket pairs or strong high-ranking cards preflop. They could be trying to build a big pot early on or force weaker hands to fold. \nyour opponent's opinion of you is:  Player 0 might think that I have a strong hand since I haven't folded yet and they raised. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses>My card type is ['CA', 'HA']. With a pair of aces, this is an extremely strong starting hand. However, the community cards are not particularly favorable for my hand at the moment, as they are all of different suits and do not create any potential flush or straight draws. I need to carefully consider my options.</ses>\n\n<ops>I think that Player 0, Player 1, and Player 2 all have strong hands or are bluffing. Their aggressive betting suggests that they have premium pocket pairs or high-ranking cards. They could be trying to build a big pot or force weaker hands to fold. With their bets, it appears that they are confident in their holdings.</ops>\n\n<opo>Player 0 might think that I have a strong hand since I haven't folded yet and they raised initially. They might be cautious about going against my pocket aces. However, without any community cards, they won't have any concrete information about my hand.</opo>\n\nBased on the current game situation, and considering that there are no potential draws on the board, I believe the most reasonable action is to {'action': 'fold'}. Folding at this point would minimize potential losses, as the community cards do not improve my hand significantly. It would be risky to continue investing chips in this hand, given the aggressive betting from the opponents."
+  }
+ ],
+ {
+  "result": "[-15.0, 29.0, -7.0, -7.0]"
+ },
+ [],
+ {
+  "result": "[-15.0, 29.0, -7.0, -7.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['CA', 'HA'], and the public cards is []. The number of chips all players have invested is [4, 0, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H5', 'S4'], and the public cards is []. The number of chips all players have invested is [4, 0, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong with a 5 and 4 of different suits. Since it is still Preflop and there are no community cards yet, I don't have much information to make a decision based on the strength of my hand alone. However, I should consider the actions of the other players and their possible strategies. </ses>\n\n<ops> Player 0 has raised, indicating that they have a strong hand or want to bluff. They have invested 4 chips. Player 1 has folded, so their strategy is no longer relevant. Player 2 has re-raised after Player 0's raise, showing that they have a strong hand and are looking to invest more chips. Player 2 has already invested 6 chips, indicating confidence in their cards. </ops>\n\n<opo> As Player 3, it is difficult to determine what Player 0 thinks of me at this point since there hasn't been any significant interaction between us. They might have predicted that I would fold given the strong actions of Player 0 and Player 2. </opo>\n\nBased on the current game situation, the most reasonable action for Player 3 would be to <strong>{'action': 'fold'}</strong>. Given the strong actions of Player 0 and Player 2, it is likely that they have strong hands. Holding a weak hand myself, it is not worth risking any more chips in this situation. By folding, I can save my chips for a stronger hand in a future round."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['CA', 'HA'], and the public cards is []. The number of chips all players have invested is [8, 0, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Player 2 raises. Player 3 folds. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[4.0, 0.0, -3.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[4.0, 0.0, -3.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S7', 'H4'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['DA', 'HA'], and the public cards is []. The number of chips all players have invested is [4, 6, 8, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is 'DA', 'HA'. Since it's still the preflop and I have two high-value cards, it's a good starting hand. However, without any community cards, I can only rely on my own cards at the moment. The pot is already quite big, with the initial investment being 4, 6, 8, and 2 chips from players 0 to 3 respectively. The aggressive raising from all players indicates strong hands or bluffing attempts. </ses>\n\n<ops> Player 0's raise indicates strength, as they were the first to initiate the betting. They might have a premium hand like pocket Aces or Kings. Player 1's raise after the initial raise from Player 0 shows confidence and a strong hand as well. Player 2's raise following Player 1 shows even more strength. It is likely that they also have a premium hand. </ops>\n\n<opo> Player 0 might think that I have a strong hand since I haven't shown any sign of folding yet, and they might be cautious about me potentially challenging their raises. </opo>\n\nConsidering the current situation and the strength shown by the opponents, it would be risky to continue with just a pair of Aces. The best decision here would be to <action> fold </action> and wait for a better opportunity to increase my chip stack.\n\n{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S7', 'H4'], and the public cards is []. The number of chips all players have invested is [10, 10, 8, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S7', 'H4'], and the public cards is ['DQ', 'D9', 'DT']. The number of chips all players have invested is [10, 12, 10, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 calls. Player 2 calls. Player 0 checks. Flop. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[25.0, -19.0, -5.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[25.0, -19.0, -5.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['HK', 'D2'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['S7', 'H4'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong with a 7 of spades and a 4 of hearts. Since the community cards have not been revealed yet, it's difficult to gauge the strength of my hand. At this point, I should consider the actions of my opponents and the amount of chips they have already invested. </ses>\n\n<ops> Player 0 has called, which indicates they have some confidence in their hand. Player 1 has raised, suggesting they may have a stronger hand than Player 0. It's unclear why Player 2 chose to fold at this stage, but it could mean they had a weak hand or were playing conservatively. </ops>\n\n<opo> Player 0 may perceive me as someone who is willing to take risks since I have not folded after the initial bets. Player 1, who has raised, might consider me as a potential threat or someone who could be easily influenced by their aggressive play. </opo>\n\nBased on the current situation and considering the limited information available, the most reasonable action for me to take would be to <b>fold</b>. The initial raise from Player 1 suggests a strong hand, and since my hand is not particularly strong, it's best to minimize potential losses by folding at this stage. \n\n{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[22.5, -21.0, -0.5, -1.0]"
+ },
+ [],
+ {
+  "result": "[22.5, -21.0, -0.5, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C3', 'D5'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H3', 'CA'], and the public cards is []. The number of chips all players have invested is [2, 4, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is H3CA. As the pre-flop stage, I currently have a mediocre starting hand. The community cards have not been revealed yet. Considering the number of chips already invested by the players, Player 0 has called, Player 1 has raised, and Player 2 has called the raise. \n\nMy feasible game strategies at this point include evaluating the strength of my hand, considering the potential value of the community cards, and analyzing the behavior of my opponents to make an informed decision about my next move. I need to weigh the potential risk versus reward of continuing in the hand.\n\n<ops> I think that Player 0 is showing interest by calling the initial bet, indicating they might have a decent hand. Player 1's raise suggests they may have a strong hand or are trying to bluff. Player 2's call after the raise indicates they might have a reasonable hand as well. Both Player 1 and Player 2 are actively involved in the pot and may pose a threat.\n\n<opo> Player 0 likely views me as a cautious and calculated player, as I tend to make logical decisions based on the game situation. They might expect me to fold or play conservatively unless I have a strong hand.\n\nConsidering my hand strength and the actions of the other players, the most reasonable action for me at this stage is to {'action': 'fold'}. Fold seems to be the safest option, as the initial raise and subsequent calls indicate a potentially strong field of opponents. It is better to preserve my chips for a stronger hand in order to avoid unnecessary risk. </ses>"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C3', 'D5'], and the public cards is ['C2', 'H9', 'S3']. The number of chips all players have invested is [4, 4, 4, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'check'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C3', 'D5'], and the public cards is ['C2', 'H9', 'S3']. The number of chips all players have invested is [6, 8, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 checks. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C3', 'D5'], and the public cards is ['C2', 'H9', 'S3', 'D9']. The number of chips all players have invested is [8, 8, 8, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 checks. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Turn. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[-18.0, 23.0, -4.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[-18.0, 23.0, -4.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['HJ', 'CQ'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['S7', 'SA'], and the public cards is []. The number of chips all players have invested is [2, 4, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is ['S7', 'SA']. This is a relatively strong starting hand, as I have a suited ace with a low card. However, since the community cards are still empty, I don't have a clear advantage yet. The current game situation is Preflop and the number of chips invested by players is [2, 4, 6, 2]. Player 0 has already called the initial bet, and Player 1 has raised. Player 2 has then re-raised. </ses>\n\n<ops> Based on the actions of my opponents, it seems that Player 1 and Player 2 have strong hands as they are raising the bets. Player 0's call could indicate a range of hands, from weak to strong. Player 1's initial raise suggests that they have a decent hand and are confident in it. Player 2's re-raise indicates that they have a strong hand and are trying to build the pot. </ops>\n\n<opo> Player 1 might think that I have a strong hand, as I have chosen to stay in the game. However, Player 2 might see my call as a sign of weakness and might consider me as an easier target to build the pot. </opo>\n\nConsidering the current game situation and the actions of my opponents, the most reasonable action for me here would be {'action': 'fold'}. Both Player 1 and Player 2 have shown strength in their bets, and there is a high possibility that they have stronger hands than mine. Folding in this situation would be a more conservative approach to minimize potential losses."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['HJ', 'CQ'], and the public cards is []. The number of chips all players have invested is [8, 10, 6, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['HJ', 'CQ'], and the public cards is ['C2', 'H9', 'S3']. The number of chips all players have invested is [10, 10, 10, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'check'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['HJ', 'CQ'], and the public cards is ['C2', 'H9', 'S3']. The number of chips all players have invested is [12, 14, 10, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Player 2 checks. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[-21.0, 27.0, -5.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[-21.0, 27.0, -5.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['H5', 'S9'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['DQ', 'DJ'], and the public cards is []. The number of chips all players have invested is [4, 6, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is DQ and DJ, and the community cards are empty. The current situation is that Player 0 has raised, Player 1 has raised again, and Player 2 has just called. Based on this, I can infer that both Player 0 and Player 1 have strong hands or at least a good position on the table. As for Player 2, their decision to call indicates that they might have a decent hand or are trying to see the flop at a reasonable price.\n\nConsidering my hand, I have a strong starting hand with two high-ranking cards. This gives me a chance to hit a high pair or potentially a straight or flush. However, since the pot has already been raised twice, it implies that I might be up against higher-ranked hands.\n\n<ops> Player 0's raise initially indicates that they have a strong hand or are trying to put pressure on the table. Player 1's subsequent raise suggests that they are confident in their hand and are willing to invest more chips. Player 2's call shows that they are interested in the pot and might have a decent hand. \n\n<opo> Player 0 may consider me as a cautious player due to my previous actions. However, they might be suspicious of my hand since I am yet to fold. \n\nConsidering the current situation, it is risky to call and continue in the hand. Folding is a safe option, given the strong indications of strong hands from multiple players. Therefore, I will choose {'action': 'fold'}.</ses>"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['H5', 'S9'], and the public cards is ['D4', 'CK', 'H7']. The number of chips all players have invested is [6, 6, 6, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['H5', 'S9'], and the public cards is ['D4', 'CK', 'H7']. The number of chips all players have invested is [10, 10, 8, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[-15.0, 20.0, -4.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[-15.0, 20.0, -4.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DQ', 'DJ'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['D3', 'C8'], and the public cards is []. The number of chips all players have invested is [2, 4, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses>My card type is not very strong with an offsuit 3 and 8. However, it is still playable in this situation as it provides the opportunity to potentially form a straight. Currently, there are no public cards as it is still the Preflop phase. The total number of chips invested by each player is [2, 4, 4, 2].</ses>\n\n<ops>I think that Player 0's decision to call indicates that they may have a decent hand or are willing to take a risk. Player 1's raise suggests they likely have a strong starting hand and are trying to increase the pot size. Player 2's call shows that they are also interested in the pot and could have a reasonable hand as well.</ops>\n\n<opo>Player 0 might think that I have a strong hand to call the initial bet. </opo>\n\nConsidering the current situation and my hand, I should be cautious as my hand is not particularly strong. Given the previous actions and the potential strength of the opponents' hands, it would be best for me to <ses>fold</ses> in this situation. Therefore, my action will be {'action': 'fold'}.\nMy decision to fold will minimize the risk of losing a significant amount of chips while preserving my stack for another hand."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DQ', 'DJ'], and the public cards is []. The number of chips all players have invested is [2, 4, 4, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 folds. Player 1 checks. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DQ', 'DJ'], and the public cards is []. The number of chips all players have invested is [2, 8, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 folds. Player 1 checks. Player 2 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DQ', 'DJ'], and the public cards is []. The number of chips all players have invested is [2, 10, 10, 2]. the actions you can choose are ['fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 folds. Player 1 checks. Player 2 raises. Player 1 raises. Player 2 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[-1.0, 7.0, -5.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[-1.0, 7.0, -5.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [2, 0, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['D7', 'D5'], and the public cards is []. The number of chips all players have invested is [2, 0, 2, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['raise', 'fold', 'check']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is ['D7', 'D5'] which is not a particularly strong hand. It is currently Preflop and the public cards are empty. The number of chips that all players have invested so far is [2, 0, 2, 2]. Player 0 has called, and Player 1 has folded. Player 2 has also called. </ses>\n\n<ops> Looking at the actions of the players so far, Player 0 and Player 2 have both called the 2-chip bet. This could indicate that they have moderately strong hands or they are just trying to see the flop with a wider range of hands. It is difficult to determine their exact strategies at this point. </ops>\n\n<opo> My opponents might view me as a cautious player, as I have not made any aggressive moves so far. However, since my hand is not particularly strong, they might also view me as a conservative player waiting for stronger hands. </opo>\n\nBased on the information available, it would be prudent to take a cautious approach and check at this point. I do not have a strong enough hand to confidently raise, and folding would be too passive considering the investment I have already made. Therefore, the most reasonable action would be to {'action': 'check'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [4, 0, 2, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['D7', 'D5'], and the public cards is []. The number of chips all players have invested is [4, 0, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is ['D7', 'D5'] which is not a particularly strong hand. It is currently Preflop and the public cards are empty. The number of chips that all players have invested so far is [2, 0, 2, 2]. Player 0 has called, and Player 1 has folded. Player 2 has also called. \nthe game situation of opponents who have not chosen to fold is:  Looking at the actions of the players so far, Player 0 and Player 2 have both called the 2-chip bet. This could indicate that they have moderately strong hands or they are just trying to see the flop with a wider range of hands. It is difficult to determine their exact strategies at this point. \nyour opponent's opinion of you is:  My opponents might view me as a cautious player, as I have not made any aggressive moves so far. However, since my hand is not particularly strong, they might also view me as a conservative player waiting for stronger hands. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is ['D7', 'D5'], which is not a particularly strong hand. Currently, the community cards are empty. The number of chips that all players have invested so far is [4, 0, 4, 2]. It is still Preflop. </ses>\n<ops> Looking at the actions of the players so far, Player 0 and Player 2 have both called the 4-chip raise. This could indicate that they have moderately strong hands or they are just trying to see the flop with a wider range of hands. It is difficult to determine their exact strategies at this point. </ops>\n<opo> My opponents might view me as a cautious player, as I have not made any aggressive moves so far. However, since my hand is not particularly strong, they might also view me as a conservative player waiting for stronger hands. </opo>\n\nConsidering the current game situation, my opponents' behavior, and their perception of me, the most reasonable action for me is to {'action': 'fold'}. \n\nFolding is the safest option here because my hand is not strong, and the number of chips invested by the other players indicates a potential strength in their hands. By folding, I can minimize my losses and wait for a better opportunity to play a stronger hand."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [6, 0, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Player 2 calls. Player 3 folds. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [8, 0, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Player 2 calls. Player 3 folds. Player 0 raises. Player 2 calls. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [10, 0, 8, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Player 2 calls. Player 3 folds. Player 0 raises. Player 2 calls. Player 0 raises. Player 2 calls. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DA', 'CA'], and the public cards is []. The number of chips all players have invested is [10, 0, 10, 2]. the actions you can choose are ['fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 folds. Player 2 calls. Player 3 checks. Player 0 raises. Player 2 calls. Player 3 folds. Player 0 raises. Player 2 calls. Player 0 raises. Player 2 calls. Player 0 raises. Player 2 calls. Player 0 checks. Please provide your results in the form of {'action': ''}. You must choose one from ['fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[6.0, 0.0, -5.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[6.0, 0.0, -5.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D7', 'D5'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['S3', 'C8'], and the public cards is []. The number of chips all players have invested is [2, 4, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is weak with a 3 and an 8, both of different suits. Since we are at the pre-flop stage, I don't have much information to make an informed decision. The pot is already quite large due to the raises made by players 1 and 2.  </ses>\n\n<ops> I think Player 0 is confident in their hand to make the call. Player 1 may have a strong starting hand to make the initial raise, and Player 2's subsequent raise suggests they also have a strong hand.</ops>\n\n<opo> Player 0 may think that I am playing conservatively and waiting for a strong hand. However, Player 1 and Player 2 may perceive me as a cautious player and be cautious about my actions.</opo>\n\nBased on the information available, it's risky to continue with my hand as it's quite weak. Folding would be the safest option to avoid investing more chips and potentially losing a large amount.\n\n{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D7', 'D5'], and the public cards is []. The number of chips all players have invested is [6, 8, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D7', 'D5'], and the public cards is ['H8', 'HJ', 'SJ']. The number of chips all players have invested is [8, 8, 8, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 calls. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D7', 'D5'], and the public cards is ['H8', 'HJ', 'SJ']. The number of chips all players have invested is [12, 14, 10, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 calls. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D7', 'D5'], and the public cards is ['H8', 'HJ', 'SJ']. The number of chips all players have invested is [16, 16, 14, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 calls. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[28.0, -20.0, -7.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[28.0, -20.0, -7.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['D9', 'S3'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H2', 'C8'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong, with a 2 of hearts and an 8 of clubs. Since it's Preflop, I don't have much information about the other players' hands. I have to consider the actions of Player 0 and Player 1 who have both raised so far. </ses>\n\n<ops> I think that Player 0 is showing some strength by raising. Player 1 also decided to raise, which indicates that they might have a strong hand as well. Both of them seem confident and willing to invest chips. </ops>\n\n<opo> Player 0 could see me as a conservative player since I haven't made any aggressive moves yet. They might think that I only call or raise with strong hands. </opo>\n\nBased on the actions of Player 0 and Player 1, I need to be cautious as I have a weaker hand. However, since the number of chips invested is relatively low, I can choose to call and see the next community cards. \n\n{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H2', 'C8'], and the public cards is []. The number of chips all players have invested is [8, 10, 1, 6]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My card type is not very strong, with a 2 of hearts and an 8 of clubs. Since it's Preflop, I don't have much information about the other players' hands. I have to consider the actions of Player 0 and Player 1 who have both raised so far. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0 is showing some strength by raising. Player 1 also decided to raise, which indicates that they might have a strong hand as well. Both of them seem confident and willing to invest chips. \nyour opponent's opinion of you is:  Player 0 could see me as a conservative player since I haven't made any aggressive moves yet. They might think that I only call or raise with strong hands. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong, with a 2 of hearts and an 8 of clubs. Since it's Preflop, I don't have much information about the other players' hands. The pot has been raised multiple times, indicating that there are likely strong hands involved. Although my hand is not completely terrible, it is not strong enough to confidently continue with aggressive betting. Given the aggressive actions of Player 0 and Player 1, I should proceed with caution. </ses>\n\n<ops> Based on the actions of Player 0 and Player 1, it is likely that they both have strong hands. Player 0 raised initially, showing confidence and strength. When Player 1 decided to raise as well, it further suggests that they have a strong hand too. It is important to consider their behavior and willingness to invest additional chips. Both players seem confident and aggressive, indicating a potential high-value hand. </ops>\n\n<opo> Player 0 might perceive me as a conservative player due to my lack of aggressive moves up until this point. As I have only called or folded, they might assume that I only do so with strong hands. This perception could influence their decision-making process moving forward. </opo>\n\nGiven the information available, the most reasonable action for me is {'action': 'fold'}. The hand I currently hold is not strong enough to compete against the likely strong hands of Player 0 and Player 1. It is wiser to fold and minimize the potential loss of chips in this situation."
+  }
+ ],
+ {
+  "result": "[-17.0, 20.5, -0.5, -3.0]"
+ },
+ [],
+ {
+  "result": "[-17.0, 20.5, -0.5, -3.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['SJ', 'C6'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['D9', 'S3'], and the public cards is []. The number of chips all players have invested is [4, 6, 8, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is ['D9', 'S3'], and currently there are no community cards. Since the pot has been raised multiple times, the game seems to be quite intense. Taking into account that I have an unsuited low-ranked hand, it may not be very favorable. However, it's still early in the game, and I have the option to fold, call, or raise the bet. </ses>\n\n<ops> Player 0, 1, and 2 have all raised the bet, indicating that they have strong hands or are trying to intimidate others. It suggests they may have high-ranked hands or are trying to bluff their way through. Their betting behavior indicates an aggressive approach, possibly aiming to force others to fold. Based on this, I need to be cautious with my own decisions. </ops>\n\n<opo> Player 0 might think that I have a strong hand since I have continued playing until now. Alternatively, they may also suspect that I am bluffing by acting confident. </opo>\n\nConsidering the current situation, it would be wise to fold. It's better to avoid unnecessary risks with a weak hand. \n\n{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['SJ', 'C6'], and the public cards is []. The number of chips all players have invested is [8, 10, 8, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[26.0, -21.0, -4.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[26.0, -21.0, -4.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S6', 'D2'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is []. The number of chips all players have invested is [2, 4, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. </ses>\n\n<ops> Player 0 has called the current bet, indicating a moderate hand strength. Player 1 has raised, which suggests a stronger hand. Player 2 has also called, indicating that they might have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. </ops>\n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nGiven the information and the fact that I have an average starting hand, I will <ses> call </ses> to see the flop and gather more information. \n\n{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S6', 'D2'], and the public cards is []. The number of chips all players have invested is [6, 8, 4, 4]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is []. The number of chips all players have invested is [6, 8, 4, 4]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. \nthe game situation of opponents who have not chosen to fold is:  Player 0 has called the current bet, indicating a moderate hand strength. Player 1 has raised, which suggests a stronger hand. Player 2 has also called, indicating that they might have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. </ses> \n\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. </ops> \n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on the current game situation and my belief, I should continue to see the flop by calling. {'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK']. The number of chips all players have invested is [8, 8, 4, 8]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['raise', 'fold', 'check']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. </ses>\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. </ops>\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nConsidering the given hand and community cards, it is still too early to make a definitive decision. However, since the number of chips is unlimited, the risk of seeing the flop is relatively low. \n\nTherefore, I will choose {'action': 'check'} and observe the subsequent actions of the other players."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK']. The number of chips all players have invested is [10, 12, 4, 8]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nGiven the information, it is still early in the game and the potential for a good hand is not high. Considering the limited information available and the cautious perception that Player 0 has of me, it is best to play it safe and {'action': 'call'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK']. The number of chips all players have invested is [14, 16, 4, 12]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on the current game situation and the belief I established earlier, it is reasonable to assume that Player 1 has a stronger hand compared to mine. However, since the number of chips is unlimited, I can afford to take a risk and call to see the next card. There is a chance that the upcoming community cards might improve my hand, and with an infinite number of chips, I can afford to make this non-optimal decision. \n\nTherefore, the most reasonable action for me at this point is to {'action': 'call'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK', 'C3']. The number of chips all players have invested is [16, 16, 4, 16]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 calls. Player 1 checks. Turn. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['raise', 'fold', 'check']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses> \n\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on the information provided, the most reasonable action for me is {'action': 'raise'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK', 'C3']. The number of chips all players have invested is [24, 24, 4, 20]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 calls. Player 1 checks. Turn. Player 3 raises. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on my analysis, I should choose {'action': 'call'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK', 'C3']. The number of chips all players have invested is [28, 28, 4, 24]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 calls. Player 1 checks. Turn. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 calls. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on the current situation, the most reasonable action for me is {'action': 'raise'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK', 'C3']. The number of chips all players have invested is [32, 32, 4, 32]. the actions you can choose are ['fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 calls. Player 1 checks. Turn. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 calls. Player 0 raises. Player 1 calls. Player 3 raises. Player 0 calls. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['fold', 'check'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['fold', 'check']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nGiven the significant investments made by Player 0 and Player 1, it is clear that they believe they have strong hands. However, as Player 3, I have a weak starting hand and no significant improvement on the flop with the community cards of DA, DK, SK, C3. The chances of improving my hand significantly on the turn or river are quite low. \n\nConsidering the actions of my opponents and the limited potential of improving my hand, the best course of action in this situation is to <check> and avoid investing more chips into the pot. Folding would also be a viable option, but with infinite chips, I can afford to see the next community cards without any significant risk. By checking, I can stay in the hand at no additional cost and potentially improve my hand on the next community cards. </check>\n\nTherefore, the most reasonable action for me in this situation is {'action': 'check'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HK', 'H2'], and the public cards is ['DA', 'DK', 'SK', 'C3', 'H8']. The number of chips all players have invested is [36, 36, 4, 32]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 calls. Player 0 raises. Player 1 raises. Player 2 folds. Player 3 calls. Player 0 calls. Player 1 checks. Flop. Player 3 checks. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 raises. Player 1 raises. Player 3 calls. Player 0 calls. Player 1 checks. Turn. Player 3 raises. Player 0 raises. Player 1 calls. Player 3 calls. Player 0 raises. Player 1 calls. Player 3 raises. Player 0 calls. Player 1 calls. Player 3 checks. River. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is:  My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community cards combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. \nthe game situation of opponents who have not chosen to fold is:  I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. \nyour opponent's opinion of you is:  Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is HK and H2, which is not a strong starting hand. However, since the number of chips is infinite and we are playing Limit Texas poker, I can afford to stay in the hand and see the flop. With no public cards on the board yet, I have limited information to make a decision. Considering the possible community card combinations that can improve my hand, I have a potential for a flush if there are more hearts on the board, and a possibility of a straight if there are consecutive cards on the flop. </ses>\n\n<ops> I think that Player 0's call indicates a moderate hand strength. Player 1's raise suggests a stronger hand. Player 2's call could mean they have a decent hand as well. Since the number of chips is infinite, it is difficult to accurately assess the strategies and hand strengths of the opponents based solely on their actions. However, considering the significant investment by Player 1 and the moderate starting hand I have, I need to be cautious of their potential strong hand. </ops>\n\n<opo> Player 0 may perceive me as a cautious player, as I have not raised or taken any aggressive actions so far. </opo>\n\nBased on my analysis of the situation, the most reasonable action for me at this point is to {'action': 'call'}."
+  }
+ ],
+ {
+  "result": "[-18.0, -18.0, -2.0, 38.0]"
+ },
+ [],
+ {
+  "result": "[-18.0, -18.0, -2.0, 38.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['DJ', 'H9'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['S6', 'D2'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong, with a 6 of spades and a 2 of diamonds. Since the community cards are still empty, I don't have much to work with at the moment. I have invested 2 chips so far, and the current pot size is 13 chips. Player 0 has raised, followed by Player 1's raise. Player 2 has already folded. </ses>\n\n<ops> I think that Player 0 is displaying confidence and aggression by raising. It's possible that they have a strong hand or are trying to bluff their opponents. Player 1's raise indicates that they also have a good hand or intend to put pressure on the other players. In any case, both Player 0 and Player 1 seem willing to invest a considerable amount of chips. </ops>\n\n<opo> Player 0 may see me as a potential threat since I have not folded and continue to stay in the hand. They may also view me as someone who might fold easily due to my weak hand. </opo>\n\nBased on the current situation, it seems risky to continue with such a weak hand. Folding would be the most reasonable action to take at this point. \n\n{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[24.5, -23.0, -0.5, -1.0]"
+ },
+ [],
+ {
+  "result": "[24.5, -23.0, -0.5, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C6', 'D9'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['C5', 'H3'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses>My card type is fairly weak, with a 5 of clubs and 3 of hearts. As the community cards are empty, I essentially only have a high card hand at the moment. I need to consider the actions of the other players and make a decision accordingly. </ses>\n\n<ops>I think that Player 0 is playing conservatively by just calling. This suggests that they may have a moderate hand and are not willing to take significant risks at this point. On the other hand, Player 1's raise indicates that they have a stronger hand. They are likely confident in their cards and want to force others to fold or invest more chips. </ops>\n\n<opo>Player 0 may view me as a cautious player since I simply called the previous bet. They might expect me to fold easily if faced with a higher raise. </opo>\n\nBased on the available information, I believe it would be best to <{'action': 'fold'}> in this situation. My hand is weak, and Player 1's raise suggests they have a strong hand. By folding, I can minimize my potential losses and conserve my chips for better opportunities in the future."
+  }
+ ],
+ {
+  "result": "[-13.0, 14.5, -0.5, -1.0]"
+ },
+ [],
+ {
+  "result": "[-13.0, 14.5, -0.5, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C5', 'H3'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H5', 'H8'], and the public cards is []. The number of chips all players have invested is [2, 4, 4, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is currently 5 of hearts and 8 of hearts. Since it's Preflop, the community cards are empty. I have a suited hand which can potentially form a flush. However, at the moment, my hand is not strong enough to confidently raise or call. Player 0 has called, Player 1 has raised, and Player 2 has called. It seems like the pot is growing and there might be some strong hands among the opponents. </ses>\n\n<ops>Player 0 calling suggests that they have a decent hand but might not be overly confident. Player 1's raise indicates that they are trying to assert dominance and have a strong hand. Player 2's call shows that they are willing to follow the game and might also have a good hand. It's possible that one or more opponents have pocket pairs or higher cards than mine.</ops>\n\n<opo>I believe that Player 0 thinks I am cautious and wait for strong hands before playing aggressively.</opo>\n\nConsidering the current game situation and the strength of my hand, I think the most reasonable action would be to <{'action': 'fold'}>. Since my hand is not strong and the pot seems to be building up with potentially strong opponents, it's safer to fold and wait for a better opportunity."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C5', 'H3'], and the public cards is ['D3', 'C3', 'HQ']. The number of chips all players have invested is [4, 4, 4, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C5', 'H3'], and the public cards is ['D3', 'C3', 'HQ']. The number of chips all players have invested is [8, 8, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C5', 'H3'], and the public cards is ['D3', 'C3', 'HQ']. The number of chips all players have invested is [10, 10, 8, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 calls. Player 2 calls. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C5', 'H3'], and the public cards is ['D3', 'C3', 'HQ']. The number of chips all players have invested is [12, 12, 12, 2]. the actions you can choose are ['fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 calls. Player 1 checks. Flop. Player 2 raises. Player 0 raises. Player 1 calls. Player 2 calls. Player 0 raises. Player 1 calls. Player 2 raises. Player 0 calls. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[27.0, -20.0, -6.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[27.0, -20.0, -6.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['SA', 'H9'], and the public cards is []. The number of chips all players have invested is [4, 6, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['C6', 'S8'], and the public cards is []. The number of chips all players have invested is [4, 6, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My hand is not very strong, with a 6 of clubs and an 8 of spades. Currently, there are no community cards on the board. The players' investments are as follows: Player 0 has raised, Player 1 has raised again, and Player 2 has called the bets. Considering my position as Player 3, I need to evaluate my options and the game situation before making a decision. </ses>\n\n<ops> Player 0 has shown aggression by raising, and Player 1 has followed suit by raising again. This indicates that they may have strong hands or are trying to bluff their way through. Player 2's call suggests that they might also have a decent hand or are hoping to see the community cards before committing further. </ops>\n\n<opo> Player 0 might see me as a cautious player since I have not shown much aggression so far. They may think I only call with strong hands, so they might believe that I have a strong hand now as well. </opo>\n\nConsidering the current information and the possible strength of my opponents' hands, the most reasonable action for me would be to <b>fold</b>. My hand is not strong enough to justify calling the raised bets, and raising would be too risky at this point. By folding, I can minimize my losses and wait for a better hand to play in the future.\n\nTherefore, I will choose {'action': 'fold'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['SA', 'H9'], and the public cards is []. The number of chips all players have invested is [8, 10, 6, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 raises. Player 1 raises. Player 2 calls. Player 3 folds. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[21.0, -17.0, -3.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[21.0, -17.0, -3.0, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S3', 'SJ'], and the public cards is []. The number of chips all players have invested is [4, 0, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HT', 'CK'], and the public cards is []. The number of chips all players have invested is [4, 0, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses>My card type is HT and CK. Currently, I have a mediocre hand with one high card (King) and one low card (Ten). Since it's the preflop stage, I don't have much information about the community cards or my opponents' hands. However, I can consider the possible strategies and game situation based on the actions of my opponents.</ses>\n\n<ops>Player 0 has raised, indicating that they likely have a strong hand or are trying to bluff. Player 1 folded, so I don't have any information about their hand. Player 2 then raised again after Player 0, which suggests they have a strong hand or are also bluffing. </ops>\n\n<opo>As Player 0 has raised and Player 2 raised again, they may perceive me as a relatively passive player due to their expectation of my response to their aggression. </opo>\n\nConsidering the current situation, I have a few options:\n\n1. Call: I can choose to call, which means matching the current bet of Player 2 and staying in the game. This strategy allows me to see the next community cards and further evaluate the strength of my hand and my opponents' hands.\n\n2. Raise: I can raise the bet, indicating that I have a strong hand and encouraging my opponents to fold. However, since my hand is not very strong, raising may not be the best move at the moment.\n\n3. Fold: I can choose to fold and exit the round. This would be a conservative approach, but it would also save me from potentially losing more chips if my opponents have stronger hands.\n\nConsidering my hand strength and the uncertain situation, the most reasonable action for me would be to <b>{'action': 'call'}</b>. By calling, I can gather more information about my opponents' hands and observe how the game progresses before making further decisions."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S3', 'SJ'], and the public cards is []. The number of chips all players have invested is [8, 0, 6, 6]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Player 2 raises. Player 3 calls. Player 0 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['HT', 'CK'], and the public cards is []. The number of chips all players have invested is [8, 0, 6, 6]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 raises. Player 1 folds. Player 2 raises. Player 3 calls. Player 0 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nIn a previous round, you have established a belief like this:\nyour own game situation is: My card type is HT and CK. Currently, I have a mediocre hand with one high card (King) and one low card (Ten). Since it's the preflop stage, I don't have much information about the community cards or my opponents' hands. However, I can consider the possible strategies and game situation based on the actions of my opponents.\nthe game situation of opponents who have not chosen to fold is: Player 0 has raised, indicating that they likely have a strong hand or are trying to bluff. Player 1 folded, so I don't have any information about their hand. Player 2 then raised again after Player 0, which suggests they have a strong hand or are also bluffing. \nyour opponent's opinion of you is: As Player 0 has raised and Player 2 raised again, they may perceive me as a relatively passive player due to their expectation of my response to their aggression. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is HT and CK. Currently, I have a mediocre hand with one high card (King) and one low card (Ten). Since it's the preflop stage, I don't have much information about the community cards or my opponents' hands. However, I can consider the possible strategies and game situation based on the actions of my opponents. </ses>\n\n<ops> I think that Player 0 is likely to have a strong hand or be bluffing since they raised initially. Player 2 raising again after Player 0 indicates a similar possibility. However, without more information, it is difficult to estimate the exact strength of their hands.</ops>\n\n<opo> Player 0 may perceive me as a relatively passive player due to their expectation of my response to their aggression. They are likely to assume that I might fold or just call their raises instead of raising back with a strong hand. This perception can potentially give me an advantage in future hands if I decide to change my strategy. </opo>\n\nBased on the current game situation and my analysis, I believe the most reasonable action would be {'action': 'fold'}. The initial raise from Player 0 and subsequent re-raise from Player 2 indicate strong hands or potential bluffs. With my mediocre hand, it would be risky to continue investing further chips in this round. Folding allows me to conserve my chips for better opportunities in the future."
+  }
+ ],
+ {
+  "result": "[6.0, 0.0, -3.0, -3.0]"
+ },
+ [],
+ {
+  "result": "[6.0, 0.0, -3.0, -3.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['C9', 'C4'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['S9', 'C8'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 folds. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is not very strong with a 9 of spades and an 8 of clubs. Since the community cards are empty, I can only rely on my own hand to make decisions. Currently, the number of chips invested by players 0, 1, 2, and 3 are 2, 4, 1, and 2 respectively. Player 0 has called and Player 1 has raised. Player 2 has folded, so only Player 0 and Player 1 are left in the game. </ses>\n\n<ops> Player 0 has shown some interest by calling, but it's unclear whether they have a strong hand or if they are just testing the waters. Player 1's raise indicates they have a better hand, but their chip investment is not significant compared to their overall stack. It's possible that they are trying to intimidate the other players and potentially force a fold. </ops>\n\n<opo> It's hard to determine what Player 0 or Player 1 thinks of me at this point, as we have just started the game and not many actions have been taken. They might view me as an unknown player since we have not interacted before. </opo>\n\nBased on the current situation, the most reasonable action for me is to <b>{'action': 'fold'}</b>. My hand is not strong, and Player 1's raise indicates they have a better hand. It is advisable to fold and wait for better opportunities."
+  }
+ ],
+ {
+  "result": "[-12.0, 13.5, -0.5, -1.0]"
+ },
+ [],
+ {
+  "result": "[-12.0, 13.5, -0.5, -1.0]"
+ },
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C8'], and the public cards is []. The number of chips all players have invested is [2, 4, 1, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 3. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "The game information is: Now your hand is ['H5', 'D6'], and the public cards is []. The number of chips all players have invested is [2, 4, 6, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. \nAs Player 3, please analyze your own game situation bracketed with <ses> and </ses>, that includes hand and community card types, feasible game strategies, the game situation of opponents who have not chosen to fold bracketed with <ops> and </ops>, that includes opponents' behavior, opponents' possible strategies, and then briefly talk about your opponent's opinion of you bracketed with <opo> and </opo>, and finally give the most reasonable action in the form of '{'action': '...'}'. Note that your action must be selected from ['call', 'raise', 'fold']. For example, <ses> My card type is ... </ses>, <ops> I think that Player 0 is ... </ops>, <opo> Player 0 think that ... </opo>. I will choose {'action': 'raise'}.You should use player 3 as the first person. "
+  },
+  {
+   "role": "assistant",
+   "content": "<ses> My card type is a 5 of hearts and a 6 of diamonds. It is a moderate hand with some potential for improvement. Currently, there are no community cards on the table, so I have limited information about the strength of my hand. The opponents have invested chips into the pot, but since the number of chips they have is infinite, it doesn't significantly affect my decision-making. </ses>\n\n<ops> Player 0 has chosen to call, indicating they have a decent hand but are not overly confident in its strength. Player 1 has raised, and then Player 2 has also raised. This suggests that both of them have strong hands and are willing to invest more chips into the pot. They might be holding high pocket pairs or premium starting hands. It is also possible that they are bluffing and trying to intimidate the other players. </ops>\n\n<opo> Player 0 might perceive me as an average player, as I have matched their call. Player 1 and Player 2 might consider me as a cautious player since I have not raised yet. They might not want to go up against me unless they are confident in their hand. </opo>\n\nConsidering the limited information about my hand and the aggressive betting from Player 1 and Player 2, the most reasonable action would be to <b>fold</b>. Folding will allow me to save my chips for a better hand and avoid potentially losing a large amount to the aggressive players. By folding, I can sit back and observe the actions of the remaining players and wait for a stronger hand to make a move. Therefore, I will choose {'action': 'fold'}."
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C8'], and the public cards is []. The number of chips all players have invested is [8, 10, 6, 2]. the actions you can choose are ['call', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'call'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C8'], and the public cards is ['S6', 'S7', 'HT']. The number of chips all players have invested is [10, 10, 10, 2]. the actions you can choose are ['raise', 'fold', 'check']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Please provide your results in the form of {'action': ''}. You must choose one from ['raise', 'fold', 'check'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'check'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C8'], and the public cards is ['S6', 'S7', 'HT']. The number of chips all players have invested is [12, 12, 10, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Player 2 checks. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'raise'}"
+  }
+ ],
+ [
+  {
+   "role": "system",
+   "content": "In this Limit Texas poker game, there are 4 players from 0 to 3, and your identity is player 2. The number of chips every player has is infinite. You just need to win new chips in the competition as much as possible."
+  },
+  {
+   "role": "user",
+   "content": "Now your hand is ['S9', 'C8'], and the public cards is ['S6', 'S7', 'HT']. The number of chips all players have invested is [16, 16, 14, 2]. the actions you can choose are ['call', 'raise', 'fold']. Currently, Preflop. Player 0 calls. Player 1 raises. Player 2 raises. Player 3 folds. Player 0 raises. Player 1 raises. Player 2 calls. Player 0 calls. Player 1 checks. Flop. Player 2 checks. Player 0 raises. Player 1 calls. Player 2 raises. Player 0 raises. Player 1 calls. Please provide your results in the form of {'action': ''}. You must choose one from ['call', 'raise', 'fold'] as your answer. Just output the dictionary, don't use any other text."
+  },
+  {
+   "role": "assistant",
+   "content": "{'action': 'fold'}"
+  }
+ ],
+ {
+  "result": "[27.0, -19.0, -7.0, -1.0]"
+ },
+ [],
+ {
+  "result": "[27.0, -19.0, -7.0, -1.0]"
+ }
+]
