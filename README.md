@@ -209,3 +209,54 @@ The purposes of the main modules are listed as below:
 *   [/Blackjack](Blackjack): The environment of Blackjack.
 *   [/data_examples](data_example): Store example in paper.
 *   [/train_examples](train_example): Example of training model.
+
+## Citation
+```
+@inproceedings{zhang-etal-2024-agent,
+    title = "Agent-Pro: Learning to Evolve via Policy-Level Reflection and Optimization",
+    author = "Zhang, Wenqi  and
+      Tang, Ke  and
+      Wu, Hai  and
+      Wang, Mengna  and
+      Shen, Yongliang  and
+      Hou, Guiyang  and
+      Tan, Zeqi  and
+      Li, Peng  and
+      Zhuang, Yueting  and
+      Lu, Weiming",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.292",
+    pages = "5348--5375"
+}
+```
+
+```
+@inproceedings{zhang-etal-2024-self-contrast,
+    title = "Self-Contrast: Better Reflection Through Inconsistent Solving Perspectives",
+    author = "Zhang, Wenqi  and
+      Shen, Yongliang  and
+      Wu, Linjuan  and
+      Peng, Qiuying  and
+      Wang, Jun  and
+      Zhuang, Yueting  and
+      Lu, Weiming",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.197",
+    pages = "3602--3622"
+}
+
+```
