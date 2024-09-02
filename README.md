@@ -224,9 +224,6 @@ The purposes of the main modules are listed as below:
       Li, Peng  and
       Zhuang, Yueting  and
       Lu, Weiming",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     year = "2024",
     address = "Bangkok, Thailand",
@@ -246,9 +243,6 @@ The purposes of the main modules are listed as below:
       Wang, Jun  and
       Zhuang, Yueting  and
       Lu, Weiming",
-    editor = "Ku, Lun-Wei  and
-      Martins, Andre  and
-      Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
     year = "2024",
     address = "Bangkok, Thailand",
