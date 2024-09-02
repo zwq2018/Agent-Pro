@@ -228,7 +228,6 @@ The purposes of the main modules are listed as below:
       Martins, Andre  and
       Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = aug,
     year = "2024",
     address = "Bangkok, Thailand",
     publisher = "Association for Computational Linguistics",
@@ -251,7 +250,6 @@ The purposes of the main modules are listed as below:
       Martins, Andre  and
       Srikumar, Vivek",
     booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    month = aug,
     year = "2024",
     address = "Bangkok, Thailand",
     publisher = "Association for Computational Linguistics",
